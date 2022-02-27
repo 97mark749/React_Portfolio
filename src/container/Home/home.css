@@ -1,9 +1,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
 /* ========= Variables ========= */
 .container {
-  height: 80rem;
+  height: 105rem;
   background: linear-gradient(300deg, #3da5c7 20%, #9639d1 80%);
   padding-left: 4rem;
+  padding-right: 3.5rem;
+  overflow: hidden;
+}
+
+.container h1 {
   position: relative;
+  left: calc(25vw - 4rem);
+  top: 14rem;
+}
+
+.container .home__description {
+  position: absolute;
+  left: calc(25vw);
+  top: 34rem;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  color: rgba(221, 237, 253, 0.7);
+  font-size: 1rem;
+}
+
+.container .home__work__popout {
+  position: absolute;
+  top: 15rem;
+}
+
+.container .home__work__popout div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.35rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 2rem;
+}
+
+.container .home__work__popout div span {
+  font-size: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #ddedfd;
+}
+
+.container .home__work__popout p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: rgba(221, 237, 253, 0.7);
+  font-weight: 300;
+  line-height: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.container .year__est {
+  position: relative;
+  top: 12rem;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  line-height: 2rem;
+}
+
+.container .year__est span {
+  font-size: 1.25rem;
+  color: rgba(221, 237, 253, 0.7);
+  font-style: italic;
+}
+
+.container .home__topLeft__line {
+  position: relative;
+  top: 7rem;
+  width: 2px;
+  height: 30%;
+  background-color: #ddedfd;
+  margin: 0;
+}
+
+.container .home__bottomLeft__line {
+  position: relative;
+  top: 17rem;
+  width: 2px;
+  height: 30%;
+  background-color: #ddedfd;
+  margin: 0;
+}
+
+.container .scroll__txt {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 35rem;
+  right: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  margin: 0;
+}
+
+.container .home__right__line {
+  position: absolute;
+  top: 40rem;
+  right: 3.5rem;
+  width: 2px;
+  height: 130%;
+  background-color: #ddedfd;
+  margin: 0;
 }
 /*# sourceMappingURL=home.css.map */

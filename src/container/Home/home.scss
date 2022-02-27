@@ -1,22 +1,100 @@
 @import '../../_variables.scss';
 
 .container{
-    height: 80rem;
+    height: 105rem;
     background: linear-gradient(300deg,$blue 20%,$purple 80%);
     padding-left: 4rem;
+    padding-right: 3.5rem;
+    overflow: hidden;
     h1{
         position: relative;
         left: calc(25vw - 4rem);
         top: 14rem;
     }
+    .home__description{
+        position: absolute;
+        left: calc(25vw);
+        top: 34rem;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+        font-weight: 400;
+        color: rgba(221,237,253,0.7);
+        font-size: 1rem;
+    }
+    .home__work__popout{
+        position: absolute;
+        top: 15rem;
+        
+        div{
+            @include flex__center;
+            gap: 0.35rem;
+            flex-flow: row wrap;
+            width: 2rem;
+            span{
+                font-size: 0;
+                width: 0.75rem;
+                height: 0.75rem;
+                background-color: $white;
+            }
+        }
+        p{
+            margin-top: 1rem;
+            font-size: 1.25rem;
+            color: rgba(221,237,253,0.7);
+            font-weight: 300;
+            line-height: 1.4rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+    .year__est{
+        position: relative;
+        top: 12rem;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        line-height: 2rem;
+        span{
+            font-size: 1.25rem;
+            color: rgba(221,237,253,0.7);
+            font-style: italic;
+        }
+    }
     .home__topLeft__line{
         position:relative;
-        left: 0;
-        top: 24.5rem;
-        width: 1px;
-        height: 10rem;
+        top: 7rem;
+        width: 2px;
+        height: 30%;
         background-color: $white;
+        margin: 0;
     }
+    .home__bottomLeft__line{
+        position:relative;
+        top: 17rem;
+        width: 2px;
+        height: 30%;
+        background-color: $white;
+        margin: 0;
+    }
+    .scroll__txt{
+        font-size: 1.25rem;
+        position: absolute;
+        top: 35rem;
+        right: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        font-size: 1rem;
+        transform: rotateZ(90deg);
+        margin: 0;
+    }
+    .home__right__line{
+        position:absolute;
+        top: 40rem;
+        right:3.5rem;
+        width: 2px;
+        height: 130%;
+        background-color: $white;
+        margin: 0;
+    }
+    
 }
 
 // 24.5 rem is a good top breakpoint for the lines on the left
