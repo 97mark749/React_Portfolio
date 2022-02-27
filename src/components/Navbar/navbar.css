@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
+/* ========= Variables ========= */
+.app__navbar__container {
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
+  width: 27rem;
+  height: 21rem;
+  background-color: #191a1c;
+  -webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+}
+
+.app__navbar__container img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 5%;
+}
+
+.app__navbar__container .app__navbar {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.app__navbar__container .app__navbar .app__navbar__list {
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+  text-align: right;
+}
+
+.app__navbar__container .app__navbar .app__navbar__list .app__navbar__item {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row nowrap;
+          flex-direction: row nowrap;
+}
+
+.app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__link {
+  color: #ddedfd;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__icon {
+  margin-left: 2rem;
+}
+
+.app__navbar__container .app__navbar .contact__box {
+  background-color: #3da5c7;
+  width: 3.5rem;
+  height: 5.5rem;
+  position: absolute;
+  right: 2rem;
+  bottom: -2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  text-align: center;
+  -webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+}
+
+.app__navbar__container .app__navbar .contact__box .contact__text {
+  margin-top: 0.5rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+}
+/*# sourceMappingURL=navbar.css.map */

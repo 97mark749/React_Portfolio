@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap');
+
+/* ========= Variables ========= */
+
+$white: rgb(221,237,253);
+$black: rgb(25,26,28);
+$blue: rgb(61,165,199);
+$purple: rgb(150,57,209);//rgb(151,79,195);
+
+@mixin flex__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

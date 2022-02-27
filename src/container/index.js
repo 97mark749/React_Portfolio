@@ -1,0 +1,9 @@
+export {default as Home} from './Home/home';
+export {default as About} from './About/about';
+export {default as Services} from './Services/services';
+export {default as Skills} from './Skills/skills';
+export {default as Work} from './Featured_Work/works';
+export {default as Projects} from './Ex_Projects/ex_projects';
+export {default as Testimonials} from './Testimonials/testimonials';
+export {default as Contact} from './Contact/contact';
+export {default as Footer} from './Footer/footer';

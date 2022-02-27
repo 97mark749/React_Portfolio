@@ -1,0 +1,22 @@
+@import '../../_variables.scss';
+
+.container{
+    height: 80rem;
+    background: linear-gradient(300deg,$blue 20%,$purple 80%);
+    padding-left: 4rem;
+    h1{
+        position: relative;
+        left: calc(25vw - 4rem);
+        top: 14rem;
+    }
+    .home__topLeft__line{
+        position:relative;
+        left: 0;
+        top: 24.5rem;
+        width: 1px;
+        height: 10rem;
+        background-color: $white;
+    }
+}
+
+// 24.5 rem is a good top breakpoint for the lines on the left

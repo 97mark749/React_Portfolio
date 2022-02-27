@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
+/* ========= Variables ========= */
+.container {
+  height: 80rem;
+  background: linear-gradient(300deg, #3da5c7 20%, #9639d1 80%);
+  padding-left: 4rem;
+  position: relative;
+}
+/*# sourceMappingURL=home.css.map */

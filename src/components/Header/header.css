@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
+/* ========= Variables ========= */
+h3 {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.25);
+}
+
+h3 span {
+  color: rgba(221, 237, 253, 0.7);
+}
+
+h3::before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  height: 1px;
+  width: 33%;
+  background-color: #ddedfd;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0.5rem;
+  height: 1px;
+  width: 33%;
+  background-color: #ddedfd;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=header.css.map */
