@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
 /* ========= Variables ========= */
 .container {
-  height: 105rem;
+  height: 110rem;
   background: linear-gradient(300deg, #3da5c7 20%, #9639d1 80%);
   padding-left: 4rem;
   padding-right: 3.5rem;
@@ -16,7 +16,7 @@
 
 .container .home__description {
   position: absolute;
-  left: calc(25vw);
+  left: 25vw;
   top: 34rem;
   line-height: 2rem;
   letter-spacing: 0.2rem;
@@ -78,6 +78,68 @@
   font-style: italic;
 }
 
+.container .image__ctr {
+  width: 25rem;
+  height: 19rem;
+  background-color: #191a1c;
+  position: absolute;
+  left: 25vw;
+  top: 61.5rem;
+  -webkit-box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container .image__ctr img {
+  width: 25rem;
+  height: 19rem;
+  opacity: 40%;
+}
+
+.container .image__ctr .byb__title {
+  position: absolute;
+  left: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+  top: 5rem;
+}
+
+.container .image__ctr .core__mission__ctr {
+  width: 13.75rem;
+  height: 5.625rem;
+  background: #9639d1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: 10%;
+  right: -4rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container .image__ctr .core__mission__ctr .byb__txt {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.container .image__ctr .core__mission__ctr .byb__icon {
+  font-size: 1.75rem;
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
 .container .home__topLeft__line {
   position: relative;
   top: 7rem;
@@ -114,7 +176,7 @@
   top: 40rem;
   right: 3.5rem;
   width: 2px;
-  height: 130%;
+  height: 137%;
   background-color: #ddedfd;
   margin: 0;
 }

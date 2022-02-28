@@ -1,7 +1,7 @@
 @import '../../_variables.scss';
 
 .container{
-    height: 105rem;
+    height: 110rem;
     background: linear-gradient(300deg,$blue 20%,$purple 80%);
     padding-left: 4rem;
     padding-right: 3.5rem;
@@ -13,7 +13,7 @@
     }
     .home__description{
         position: absolute;
-        left: calc(25vw);
+        left: 25vw;
         top: 34rem;
         line-height: 2rem;
         letter-spacing: 0.2rem;
@@ -58,6 +58,51 @@
             font-style: italic;
         }
     }
+    .image__ctr{
+        width: 25rem;
+        height: 19rem;
+        background-color: $black;
+        position: absolute;
+        left: 25vw;
+        top: 61.5rem;
+        box-shadow: $image-box-shadow;
+        img{
+            width: 25rem;
+            height: 19rem;
+            opacity: 40%;
+        }
+        .byb__title{
+            position: absolute;
+            left: 2rem;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 0.3rem;
+            line-height: 3rem;
+            top: 5rem;
+        }
+        .core__mission__ctr{
+            width: 13.75rem;
+            height: 5.625rem;
+            background: $purple;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            bottom: 10%;
+            right: -4rem;
+            flex-flow: row nowrap;
+            box-shadow: $image-box-shadow;
+            .byb__txt{
+                font-weight: 300;
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+            .byb__icon{
+                font-size: 1.75rem;
+                filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.5));
+            }
+        }
+    }
     .home__topLeft__line{
         position:relative;
         top: 7rem;
@@ -90,7 +135,7 @@
         top: 40rem;
         right:3.5rem;
         width: 2px;
-        height: 130%;
+        height: 137%;
         background-color: $white;
         margin: 0;
     }

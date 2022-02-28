@@ -7,8 +7,8 @@
   width: 27rem;
   height: 21rem;
   background-color: #191a1c;
-  -webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
-          box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
 }
 
 .app__navbar__container img {
@@ -80,8 +80,8 @@
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   text-align: center;
-  -webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
-          box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
 }
 
 .app__navbar__container .app__navbar .contact__box .contact__text {
