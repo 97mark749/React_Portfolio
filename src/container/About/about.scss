@@ -2,5 +2,9 @@
 
 .about__container{
     height: 80rem;
-
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
 }

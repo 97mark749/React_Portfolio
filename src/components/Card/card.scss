@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.card__container{
+    width: 25rem;
+    height: 29rem;
+    background-color: $blue;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    box-shadow: 3px 3px 1px black,$image-box-shadow;
+    padding: 2rem;
+    border: 1px solid $black;
+
+    .self__image__container{
+        //margin-top: 3rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 30%;
+        background-color: rgba(221,237,253,0.20);
+        backdrop-filter: blur(15px);
+        box-shadow: 1px 3px 1px rgba(0,0,0,0.25);
+        @include flex__center;
+        img{
+            width: 8rem;
+            height:8rem;
+            border-radius: 50%;
+            box-shadow: 0 2px 1px rgba(0,0,0,0.25);
+        }
+    }
+    .card__body__text{
+        width: 100%;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+        text-align:center;
+        font-size: 1.1rem;
+        color: $black;
+    }
+}
