@@ -1,10 +1,26 @@
 @import '../../variables';
 
 .about__container{
-    height: 80rem;
+    position: relative;
+    height: 70rem;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    
+    padding: 2rem 4rem;
+    h2{
+        position: absolute;
+        top: 20%;
+        left: 8rem;
+    }
+    .about__text{
+        width: 50%;
+        position: absolute;
+        top: 27%;
+        left: 8rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.2rem;
+        font-weight: 300;
+        color: $white;
+    }
 }

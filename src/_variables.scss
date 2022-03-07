@@ -13,3 +13,48 @@ $image-box-shadow: 15px 15px 10px rgba(0,0,0,0.25);
     justify-content: center;
     align-items: center;
 }
+
+@mixin transition_properties($props...) {
+    $result: ();
+
+    @for $i from 1 through length($props) {
+      $prop: nth($props, $i);
+      $result: append($result, $prop);
+
+      @if $i != length($props) {
+        $result: append($result, unquote($string: ","));
+      }
+    }
+
+    transition-property: $result;
+}
+
+@mixin transition_duration($props...) {
+    $result: ();
+
+    @for $i from 1 through length($props) {
+      $prop: nth($props, $i);
+      $result: append($result, $prop);
+
+      @if $i != length($props) {
+        $result: append($result, unquote($string: ","));
+      }
+    }
+
+    transition-duration: $result;
+}
+
+@mixin transition_timing($props...) {
+    $result: ();
+
+    @for $i from 1 through length($props) {
+      $prop: nth($props, $i);
+      $result: append($result, $prop);
+
+      @if $i != length($props) {
+        $result: append($result, unquote($string: ","));
+      }
+    }
+
+    transition-timing-function: $result;
+}

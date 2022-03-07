@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.scss';
-import {Intro,Hobbies,WorkStyle} from '../../components';
+import {Carousel} from '../../components';
 
 
 const about = () => {
@@ -8,7 +8,9 @@ const about = () => {
   return (
     <div className="about__container">
       <h2 className="header">Hi, my name is Mark Kirby . . .</h2>
-      <Intro/>
+      <p className="about__text">I’m a FrontEnd Web Developer with a BS in Computer & Information Sciences. I take pride in creating applications that solve business problems and perform with a seamless user experience!</p>
+
+      <Carousel/>
     </div>
   );
 }
