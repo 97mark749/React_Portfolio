@@ -2,7 +2,7 @@ import React from 'react'
 import './home.scss'
 import {Header} from '../../components';
 import {images} from '../../constants';
-import {IoIosArrowDropdownCircle} from 'react-icons/io'
+import {IoIosArrowDropdownCircle} from 'react-icons/io';
 
 const home = () => {
   return (

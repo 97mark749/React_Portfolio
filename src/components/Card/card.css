@@ -29,33 +29,42 @@
 }
 
 .card__container:hover .card__icon {
+  width: 3.75rem;
+  height: 3.75rem;
   top: 0%;
   left: 0%;
-  -webkit-transform: translate(20%, 20%);
-          transform: translate(20%, 20%);
+  -webkit-transform: translate(30%, 30%);
+          transform: translate(30%, 30%);
 }
 
 .card__container:hover .card__icon.design__icon {
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
-}
-
-.card__container:hover .card__icon.workStyle__header {
-  -webkit-transform: translate(30%, 30%);
-          transform: translate(30%, 30%);
+  width: 2.75rem;
+  height: 2.75rem;
 }
 
 .card__container:hover .card__header {
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25);
   bottom: revert;
   top: 0%;
   left: 0%;
-  -webkit-transform: translate(70%, 145%);
-          transform: translate(70%, 145%);
+  -webkit-transform: translate(55%, 135%);
+          transform: translate(55%, 135%);
+}
+
+.card__container:hover .card__header.workStyle__header {
+  -webkit-transform: translate(65%, 135%);
+          transform: translate(65%, 135%);
 }
 
 .card__container:hover .card__header.design__header {
-  -webkit-transform: translate(70%, 165%);
-          transform: translate(70%, 165%);
+  -webkit-transform: translate(55%, 125%);
+          transform: translate(55%, 125%);
+}
+
+.card__container:hover .learn__more__container {
+  opacity: 1;
 }
 
 .card__container .card__icon {
@@ -68,10 +77,10 @@
           filter: drop-shadow(2px 3px 1px rgba(0, 0, 0, 0.5));
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition-property: top , left , -webkit-transform;
-  transition-property: top , left , -webkit-transform;
-  transition-property: transform , top , left;
-  transition-property: transform , top , left , -webkit-transform;
+  -webkit-transition-property: top , left , width , height , -webkit-transform;
+  transition-property: top , left , width , height , -webkit-transform;
+  transition-property: transform , top , left , width , height;
+  transition-property: transform , top , left , width , height , -webkit-transform;
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
   -webkit-transition-timing-function: ease-in-out;
@@ -90,18 +99,68 @@
   -webkit-transform: translate(-50%, 150%);
           transform: translate(-50%, 150%);
   font-family: "Arima Madurai";
+  letter-spacing: 0.15rem;
   font-size: 1.75em;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-transition-property: top , left , -webkit-transform;
-  transition-property: top , left , -webkit-transform;
-  transition-property: transform , top , left;
-  transition-property: transform , top , left , -webkit-transform;
+  -webkit-transition-property: top , left , text-shadow , -webkit-transform;
+  transition-property: top , left , text-shadow , -webkit-transform;
+  transition-property: transform , top , left , text-shadow;
+  transition-property: transform , top , left , text-shadow , -webkit-transform;
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+}
+
+.card__container .learn__more__container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0%;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
+.card__container .learn__more__container p {
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+  background-clip: text;
+  margin-right: 1.25rem;
+}
+
+.card__container .learn__more__container .learn__more__toggle {
+  font-size: 1.5rem;
+  -webkit-filter: drop-shadow(1px 1px 1px black);
+          filter: drop-shadow(1px 1px 1px black);
 }
 
 .card__container .self__image__container {

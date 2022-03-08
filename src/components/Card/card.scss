@@ -24,24 +24,33 @@
         height: 16rem;
         border-radius: 10%;
         .card__icon{
+            width: 3.75rem;
+            height: 3.75rem;
             top: 0%;
             left: 0%;
-            transform: translate(20%,20%);
+            transform: translate(30%,30%);
             &.design__icon{
                 transform: translate(50%,50%);
+                width: 2.75rem;
+                height: 2.75rem;
             }
-            &.workStyle__header{
-                transform: translate(30%,30%);
-            }
+
         }
         .card__header{
+            text-shadow: 1px 2px 1px rgba(0,0,0,0.25);
             bottom: revert;
             top: 0%;
             left: 0%;
-            transform: translate(70%,145%);
-            &.design__header{
-                transform: translate(70%,165%);
+            transform: translate(55%,135%);
+            &.workStyle__header{
+                transform: translate(65%,135%);
             }
+            &.design__header{
+                transform: translate(55%,125%);
+            }
+        }
+        .learn__more__container{
+            opacity: 1;
         }
     }
     .card__icon{
@@ -52,7 +61,7 @@
         left: 50%;
         filter: drop-shadow(2px 3px 1px rgba(0,0,0,0.5));
         transform: translate(-50%,-50%);
-        @include transition-properties(transform, top,left);
+        @include transition-properties(transform, top,left,width,height);
         @include transition-duration(400ms);
         @include transition-timing(ease-in-out);
 
@@ -69,11 +78,43 @@
         left: 50%;
         transform: translate(-50%,150%);
         font-family: $primary-font;
+        letter-spacing: 0.15rem;
         font-size: 1.75em;
         width: max-content;
-        @include transition-properties(transform, top,left);
+        @include transition-properties(transform, top,left,text-shadow);
         @include transition-duration(400ms);
         @include transition-timing(ease-in-out);
+    }
+    .learn__more__container{
+        height: fit-content;
+        width: max-content;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 0%;
+        opacity: 0;
+        @include transition-properties(opacity);
+        @include transition-duration(150ms);
+        @include transition-timing(ease-in);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translateX(15%);
+        //color:rgba(221,237,253,0.75);
+        
+        p{
+            font-size: 1.25em;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            text-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+            background-clip: text;
+            margin-right: 1.25rem;
+
+        }
+        .learn__more__toggle{
+            font-size: 1.5rem;
+            filter: drop-shadow(1px 1px 1px rgb(0,0,0));
+        }
     }
 
     .self__image__container{
