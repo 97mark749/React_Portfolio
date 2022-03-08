@@ -40,9 +40,22 @@
           transform: translate(50%, 50%);
 }
 
-.card__container:hover .card__icon.workStyle__icon {
+.card__container:hover .card__icon.workStyle__header {
   -webkit-transform: translate(30%, 30%);
           transform: translate(30%, 30%);
+}
+
+.card__container:hover .card__header {
+  bottom: revert;
+  top: 0%;
+  left: 0%;
+  -webkit-transform: translate(70%, 145%);
+          transform: translate(70%, 145%);
+}
+
+.card__container:hover .card__header.design__header {
+  -webkit-transform: translate(70%, 165%);
+          transform: translate(70%, 165%);
 }
 
 .card__container .card__icon {
@@ -68,6 +81,27 @@
 .card__container .card__icon.design__icon {
   width: 3.5rem;
   height: 3.5rem;
+}
+
+.card__container .card__header {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 150%);
+          transform: translate(-50%, 150%);
+  font-family: "Arima Madurai";
+  font-size: 1.75em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transition-property: top , left , -webkit-transform;
+  transition-property: top , left , -webkit-transform;
+  transition-property: transform , top , left;
+  transition-property: transform , top , left , -webkit-transform;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .card__container .self__image__container {

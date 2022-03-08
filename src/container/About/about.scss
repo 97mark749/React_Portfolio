@@ -2,10 +2,10 @@
 
 .about__container{
     position: relative;
-    height: 70rem;
+    height: 60rem;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 2rem 4rem;
     h2{
@@ -22,5 +22,9 @@
         letter-spacing: 0.2rem;
         font-weight: 300;
         color: $white;
+    }
+    .info__container{
+        height: 50%;
+        width: 100%;
     }
 }

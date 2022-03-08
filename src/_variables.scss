@@ -7,6 +7,8 @@ $black: rgb(25,26,28);
 $blue: rgb(61,165,199);
 $purple: rgb(150,57,209);//rgb(151,79,195);
 $image-box-shadow: 15px 15px 10px rgba(0,0,0,0.25);
+$primary-font: 'Arima Madurai';
+$secondary-font: 'Fira Sans';
 
 @mixin flex__center{
     display: flex;

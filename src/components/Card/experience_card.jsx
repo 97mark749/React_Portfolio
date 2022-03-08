@@ -9,7 +9,9 @@ const experience_card = () => {
        {/*} <div className="self__image__container">
          <img src={images.me} alt="Image of Me"/>
         </div>*/}
+      
         <IoIosTime className='card__icon'/>
+        <h4 className="card__header">Experienced</h4>
     </div>
   )
 }

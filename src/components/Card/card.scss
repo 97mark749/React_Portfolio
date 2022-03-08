@@ -30,8 +30,17 @@
             &.design__icon{
                 transform: translate(50%,50%);
             }
-            &.workStyle__icon{
+            &.workStyle__header{
                 transform: translate(30%,30%);
+            }
+        }
+        .card__header{
+            bottom: revert;
+            top: 0%;
+            left: 0%;
+            transform: translate(70%,145%);
+            &.design__header{
+                transform: translate(70%,165%);
             }
         }
     }
@@ -52,6 +61,19 @@
             height:3.5rem;
             
         }
+    }
+
+    .card__header{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,150%);
+        font-family: $primary-font;
+        font-size: 1.75em;
+        width: max-content;
+        @include transition-properties(transform, top,left);
+        @include transition-duration(400ms);
+        @include transition-timing(ease-in-out);
     }
 
     .self__image__container{

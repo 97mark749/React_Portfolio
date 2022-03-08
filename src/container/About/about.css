@@ -2,7 +2,7 @@
 /* ========= Variables ========= */
 .about__container {
   position: relative;
-  height: 70rem;
+  height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,9 +10,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -34,5 +34,10 @@
   letter-spacing: 0.2rem;
   font-weight: 300;
   color: #ddedfd;
+}
+
+.about__container .info__container {
+  height: 50%;
+  width: 100%;
 }
 /*# sourceMappingURL=about.css.map */
