@@ -13,7 +13,7 @@
 }
 
 .skills__container .left {
-  width: 30%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,7 +25,11 @@
           align-items: center;
 }
 
-.skills__container .left .scroll__line {
+.skills__container .left .skills__content {
+  margin-left: 2rem;
+}
+
+.skills__container .left .skills__content .scroll__line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,13 +42,13 @@
           align-items: center;
 }
 
-.skills__container .left .scroll__line h4 {
+.skills__container .left .skills__content .scroll__line h4 {
   font-weight: 500;
   color: #9639d1;
   letter-spacing: 0.2rem;
 }
 
-.skills__container .left .scroll__line .line {
+.skills__container .left .skills__content .scroll__line .line {
   margin-left: 1rem;
   height: 1px;
   width: 8rem;
@@ -52,11 +56,11 @@
   border: 1px solid #9639d1;
 }
 
-.skills__container .left .header {
+.skills__container .left .skills__content .header {
   margin: 1rem 0;
 }
 
-.skills__container .left p {
+.skills__container .left .skills__content p {
   margin-top: 2.5rem;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -68,6 +72,65 @@
 }
 
 .skills__container .right {
-  width: 70%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills__container .right .carousel__container {
+  width: 40rem;
+  overflow: hidden;
+  overflow-x: auto;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.skills__container .right .carousel__container .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 2rem;
+  width: 9rem;
+  height: 11rem;
+}
+
+.skills__container .right .carousel__container .skill .circle {
+  position: relative;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  background: black;
+  border: 1px solid #3da5c7;
+}
+
+.skills__container .right .carousel__container .skill .circle .icon__circle {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background: #3da5c7;
 }
 /*# sourceMappingURL=skills.css.map */
