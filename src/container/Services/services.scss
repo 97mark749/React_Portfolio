@@ -2,34 +2,42 @@
 
 .services__container{
     position: relative;
-    height: 70rem;
+    height: 60rem;
     display: flex;
     flex-flow: row wrap;
+    margin-top: 5rem;
     padding: 2rem 4rem;
     .left{
         width: 50%;
         height: 100%;
-        .header{
+        @include flex__center;
+        .services__content__container{
+            width: max-content;
+            height: max-content;
             
-        }
-        .services__list{
-            list-style: none;
-            .list__item{
-                display: flex;
-                flex-flow: row nowrap;
-                margin: 1.5rem 0;
-                .check_mark{
-                    color: $lighter_blue;
-                    background-color: $white;
-                    border-radius: 50%;
-                    font-size: 1.1rem;
-                }
-                li{
-                    color: $blue;
-                    font-weight: 400;
-                    margin-left: 1rem;
-                    font-size: 1rem;
-                    letter-spacing: 0.2rem;
+            .services__list{
+                margin-top: 5rem;
+                list-style: none;
+                .list__item{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    margin: 1.25rem 0;
+                    .check_mark{
+                        color: $lighter_blue;
+                        background-color: $white;
+                        border-radius: 50%;
+                        font-size: 1.1rem;
+                        box-shadow: 0 2px 1px rgba(0,0,0,0.5);
+                    }
+                    li{
+                        color: $blue;
+                        font-weight: 500;
+                        margin-left: 1rem;
+                        font-size: 1.1rem;
+                        letter-spacing: 0.2rem;
+                        text-shadow: 0 1.5px 1px rgba(0,0,0,0.5);
+                    }
                 }
             }
         }

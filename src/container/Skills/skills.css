@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=skills.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
+/* ========= Variables ========= */
+.skills__container {
+  height: 45rem;
+  padding: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.skills__container .left {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__container .left .scroll__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__container .left .scroll__line h4 {
+  font-weight: 500;
+  color: #9639d1;
+  letter-spacing: 0.2rem;
+}
+
+.skills__container .left .scroll__line .line {
+  margin-left: 1rem;
+  height: 1px;
+  width: 8rem;
+  background: #9639d1;
+  border: 1px solid #9639d1;
+}
+
+.skills__container .left .header {
+  margin: 1rem 0;
+}
+
+.skills__container .left p {
+  margin-top: 2.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  line-height: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.skills__container .right {
+  width: 70%;
+}
+/*# sourceMappingURL=skills.css.map */

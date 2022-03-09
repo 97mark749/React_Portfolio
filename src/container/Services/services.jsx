@@ -9,12 +9,14 @@ const services = () => {
   return (
     <div className="services__container">
         <div className="left">
-          <h2 className='header'>Services &<br/>Expectations</h2>
-          <ul className='services__list'>
-            {services.map((item) => (
-              <div key={`item-${item}`} className="list__item"><BsFillCheckCircleFill className='check_mark'/><li>{item}</li></div>
-            ))}
-          </ul>
+          <div className="services__content__container">
+            <h2 className='header'>Services &<br/>Expectations</h2>
+            <ul className='services__list'>
+              {services.map((item) => (
+                <div key={`item-${item}`} className="list__item"><BsFillCheckCircleFill className='check_mark'/><li>{item}</li></div>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="right"><div className="phone__img"><Phone/></div></div>
     </div>
