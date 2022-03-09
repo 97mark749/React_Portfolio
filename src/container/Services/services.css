@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=services.css.map */
+.services__container {
+  height: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.services__container .left {
+  width: 60%;
+}
+
+.services__container .right {
+  width: 40%;
+}
+/*# sourceMappingURL=services.css.map */

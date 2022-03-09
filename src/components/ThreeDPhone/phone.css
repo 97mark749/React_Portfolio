@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
+/* ========= Variables ========= */
+.phone__container {
+  height: 20rem;
+  width: 35rem;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  color: #191a1c;
+}
+
+.phone__container .phone__body .side-screen {
+  position: absolute;
+  height: 22.1rem;
+  width: 11.625rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 5px rgba(221, 237, 253, 0.5);
+          box-shadow: 4px 5px rgba(221, 237, 253, 0.5);
+  -webkit-transform: scale3d(1, 1, 1) rotateX(41deg) rotateY(0deg) rotateZ(40deg) translate3d(200px, -70px, 490px) skew(2deg, 0deg);
+          transform: scale3d(1, 1, 1) rotateX(41deg) rotateY(0deg) rotateZ(40deg) translate3d(200px, -70px, 490px) skew(2deg, 0deg);
+  background: rgba(221, 237, 253, 0.95);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone__container .phone__body .side-screen .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 25%;
+}
+
+.phone__container .phone__body .side-screen .section .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 0.5rem;
+  left: -0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.phone__container .phone__body .side-screen .section .circle span {
+  font-size: 1.4rem;
+}
+
+.phone__container .phone__body .side-screen .section .text {
+  position: relative;
+  padding-left: 0.5rem;
+  width: 70%;
+  height: 100%;
+  font-size: 16px;
+}
+
+.phone__container .phone__body .side-screen .section .text .heading {
+  position: absolute;
+  top: 1.25rem;
+  font-size: 0.65rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.phone__container .phone__body .side-screen .section .text .content {
+  position: absolute;
+  top: 2rem;
+  padding-left: 0.25rem;
+  font-size: 0.5rem;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.phone__container .phone__body .side-screen .section .text .bar {
+  position: absolute;
+  bottom: 1.25rem;
+  height: 0.125rem;
+  width: 5.5rem;
+  border-radius: 20px;
+  background: rgba(18, 18, 18, 0.25);
+}
+
+.phone__container .phone__body .glass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  position: absolute;
+  height: 26rem;
+  width: 12.5rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 3px rgba(221, 237, 253, 0.5);
+          box-shadow: 2px 3px rgba(221, 237, 253, 0.5);
+  -webkit-transform: scale3d(1, 1, 1) rotateX(41deg) rotateY(0deg) rotateZ(40deg) translate3d(-45px, -50px, 5px) skew(0deg, 0deg);
+          transform: scale3d(1, 1, 1) rotateX(41deg) rotateY(0deg) rotateZ(40deg) translate3d(-45px, -50px, 5px) skew(0deg, 0deg);
+  background: rgba(221, 237, 253, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.phone__container .phone__body .glass .bottom-window {
+  z-index: 4;
+  position: absolute;
+  bottom: 1.5rem;
+  height: 8rem;
+  width: 5rem;
+  border-radius: 20px;
+  background: rgba(221, 237, 253, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 0.5px solid rgba(177, 177, 177, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 0.25rem;
+}
+
+.phone__container .phone__body .glass .bottom-window img {
+  position: relative;
+}
+
+.phone__container .phone__body .glass .bottom-window p {
+  position: relative;
+  top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.phone__container .phone__body .glass .bottom-window.one {
+  left: 0.8rem;
+}
+
+.phone__container .phone__body .glass .bottom-window.one img {
+  top: 0;
+  left: 0.25rem;
+  height: 5rem;
+  width: 5.5rem;
+}
+
+.phone__container .phone__body .glass .bottom-window.one p {
+  top: -0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.phone__container .phone__body .glass .bottom-window.two {
+  right: 0.8rem;
+}
+
+.phone__container .phone__body .glass .bottom-window.two img {
+  top: 0;
+  height: 4rem;
+  width: 4.5rem;
+}
+
+.phone__container .phone__body .glass .bottom-window.two p {
+  top: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.phone__container .phone__body .glass .lg-cutOut {
+  z-index: 5;
+  width: 10rem;
+  height: 6rem;
+  border-radius: 20px;
+  background: rgba(221, 237, 253, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 0.5px solid rgba(177, 177, 177, 0.5);
+  -webkit-box-shadow: 2px 3px rgba(119, 120, 121, 0.25), 3px 5px rgba(134, 134, 134, 0.25), 15px 20px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 3px rgba(119, 120, 121, 0.25), 3px 5px rgba(134, 134, 134, 0.25), 15px 20px 50px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translate3d(-70px, -25px, 50px);
+          transform: translate3d(-70px, -25px, 50px);
+  position: absolute;
+  bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.phone__container .phone__body .glass .lg-cutOut .line {
+  width: 80%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.phone__container .phone__body .glass .lg-cutOut .line:first-child {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+}
+
+.phone__container .phone__body .glass .lg-cutOut .line .icon {
+  position: relative;
+  left: -0.25rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: rgba(221, 237, 253, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.phone__container .phone__body .glass .lg-cutOut .line .icon span {
+  font-size: 1rem;
+}
+
+.phone__container .phone__body .glass .lg-cutOut .line .name {
+  margin-left: 0.5rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+.phone__container .phone__body .glass .cutOut {
+  border-radius: 20px;
+  background: rgba(221, 237, 253, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 0.5px solid rgba(177, 177, 177, 0.5);
+  position: absolute;
+  top: 4.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone__container .phone__body .glass .cutOut span {
+  position: relative;
+  text-shadow: 2px 3px rgba(119, 120, 121, 0.25);
+}
+
+.phone__container .phone__body .glass .cutOut p {
+  position: absolute;
+}
+
+.phone__container .phone__body .glass .cutOut.one {
+  width: 4.25rem;
+  height: 5.25rem;
+  z-index: 1;
+  right: 1.5rem;
+  -webkit-box-shadow: 2px 3px rgba(119, 120, 121, 0.25), 3px 5px rgba(134, 134, 134, 0.25);
+          box-shadow: 2px 3px rgba(119, 120, 121, 0.25), 3px 5px rgba(134, 134, 134, 0.25);
+  -webkit-transform: translate3d(0px, -5px, 0px);
+          transform: translate3d(0px, -5px, 0px);
+}
+
+.phone__container .phone__body .glass .cutOut.one span {
+  bottom: 1rem;
+  color: rgba(138, 14, 196, 0.9);
+  font-size: 1.75rem;
+}
+
+.phone__container .phone__body .glass .cutOut.one p {
+  bottom: 1rem;
+  font-size: 0.65rem;
+}
+
+.phone__container .phone__body .glass .cutOut.two {
+  width: 4.75rem;
+  height: 5.75rem;
+  z-index: 2;
+  -webkit-box-shadow: 2px 4px rgba(119, 120, 121, 0.25), 3px 5px rgba(134, 134, 134, 0.5);
+          box-shadow: 2px 4px rgba(119, 120, 121, 0.25), 3px 5px rgba(134, 134, 134, 0.5);
+  -webkit-transform: translate3d(-30px, -45px, 50px);
+          transform: translate3d(-30px, -45px, 50px);
+}
+
+.phone__container .phone__body .glass .cutOut.two span {
+  bottom: 1rem;
+  color: rgba(14, 114, 196, 0.9);
+  font-size: 2.5rem;
+}
+
+.phone__container .phone__body .glass .cutOut.two p {
+  bottom: 1rem;
+  font-size: 0.65rem;
+}
+
+.phone__container .phone__body .glass .cutOut.three {
+  width: 5.5rem;
+  height: 6.5rem;
+  z-index: 3;
+  left: 0;
+  -webkit-box-shadow: 2px 4px rgba(119, 120, 121, 0.25), 3px 5px #868686;
+          box-shadow: 2px 4px rgba(119, 120, 121, 0.25), 3px 5px #868686;
+  -webkit-transform: translate3d(-55px, -95px, 100px);
+          transform: translate3d(-55px, -95px, 100px);
+}
+
+.phone__container .phone__body .glass .cutOut.three span {
+  bottom: 1rem;
+  color: rgba(161, 22, 12, 0.9);
+  font-size: 2.2rem;
+}
+
+.phone__container .phone__body .glass .cutOut.three p {
+  bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.phone__container .phone__body .glass .notch {
+  position: absolute;
+  top: -0.75em;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 15px;
+  background: #292c33;
+  border: none;
+}
+
+.phone__container .phone__body .base {
+  z-index: 1;
+  height: 26rem;
+  width: 12.5rem;
+  -webkit-transform: scale3d(1, 1, 1) rotateX(41deg) rotateY(0deg) rotateZ(40deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+          transform: scale3d(1, 1, 1) rotateX(41deg) rotateY(0deg) rotateZ(40deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  border-radius: 20px;
+  background: #8677db;
+  -webkit-box-shadow: 5px 6px #a097db, 8px 9px #a097db, 11px 12px #a097db, 14px 15px #a097db, 15px 16px #ccc;
+          box-shadow: 5px 6px #a097db, 8px 9px #a097db, 11px 12px #a097db, 14px 15px #a097db, 15px 16px #ccc;
+  border: 0.5px solid #ccc;
+}
+
+.phone__container .phone__body .base .home-bar {
+  z-index: 2;
+  position: absolute;
+  bottom: 0.5rem;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  width: 4rem;
+  height: 0.25rem;
+  border-radius: 20px;
+  background: #32348b;
+}
+
+.phone__container .phone__body .base .timeDate {
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.2rem;
+}
+
+.phone__container .phone__body .base .timeDate .clock {
+  font-size: 3.75rem;
+}
+
+.phone__container .phone__body .base .timeDate .date {
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+}
+
+.phone__container .phone__body .base .top {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.5rem;
+}
+
+.phone__container .phone__body .base .top:last-child {
+  margin-right: 0;
+}
+
+.phone__container .phone__body .base .top span {
+  font-size: 1rem;
+  margin: 0 0.1rem;
+}
+
+.phone__container .phone__body .base .top span #battery {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.phone__container .phone__body .base .bottom {
+  width: 100%;
+  height: 3.5rem;
+  background: rgba(104, 106, 209, 0.9);
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.phone__container .phone__body .base .bottom span {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=phone.css.map */

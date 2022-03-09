@@ -1,0 +1,12 @@
+.services__container{
+    height: 80rem;
+    display: flex;
+    flex-flow: row wrap;
+    .left{
+        width: 60%;
+
+    }
+    .right{
+        width: 40%;
+    }
+}
