@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
 /* ========= Variables ========= */
 .phone__container {
-  height: 20rem;
-  width: 35rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   color: #191a1c;
+}
+
+.phone__container .phone__body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .phone__container .phone__body .side-screen {

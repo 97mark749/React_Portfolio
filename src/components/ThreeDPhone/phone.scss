@@ -1,11 +1,13 @@
 @import '../../variables';
 
 .phone__container{
-    height: 20rem;
-    width: 35rem;
+    height: fit-content;//20rem;
+    width: fit-content;//35rem;
     perspective: 1000px;
     color: $black;
     .phone__body{
+        height: fit-content;//20rem;
+        width: fit-content;//35rem;
         .side-screen{
             position:absolute;
             height: 22.1rem;

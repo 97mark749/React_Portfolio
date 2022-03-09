@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Courgette&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap');
 @import './_variables.scss';
-@import "~slick-carousel/slick/slick.css"; 
-@import "~slick-carousel/slick/slick-theme.css";
 
 
 /******** RESET STYLES ********/
@@ -77,6 +75,7 @@ h1{
     text-shadow: 4px 4px 2px $black;
     line-height: 6rem;
 }
+
 h3{
     font-size: 1.5em;
 }

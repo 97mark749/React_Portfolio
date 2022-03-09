@@ -1,12 +1,47 @@
+@import '../../variables';
+
 .services__container{
-    height: 80rem;
+    position: relative;
+    height: 70rem;
     display: flex;
     flex-flow: row wrap;
+    padding: 2rem 4rem;
     .left{
-        width: 60%;
-
+        width: 50%;
+        height: 100%;
+        .header{
+            
+        }
+        .services__list{
+            list-style: none;
+            .list__item{
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 1.5rem 0;
+                .check_mark{
+                    color: $lighter_blue;
+                    background-color: $white;
+                    border-radius: 50%;
+                    font-size: 1.1rem;
+                }
+                li{
+                    color: $blue;
+                    font-weight: 400;
+                    margin-left: 1rem;
+                    font-size: 1rem;
+                    letter-spacing: 0.2rem;
+                }
+            }
+        }
     }
     .right{
-        width: 40%;
+        width: 50%;
+        height: 100%;
+        @include flex__center;
+        .phone__img{
+            position:relative;
+            right: 4rem;
+            transform: scale(0.9);
+        }
     }
 }

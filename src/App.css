@@ -55,7 +55,7 @@ input, select {
 /******** GLOBAL STYLES ********/
 .app {
   background-color: #292c33;
-  font-family: 'fira sans','regular';
+  font-family: "Fira Sans", "regular";
   font-size: 16px;
   color: #ddedfd;
   width: 100vw;
@@ -63,7 +63,7 @@ input, select {
 }
 
 h1, h2 {
-  font-family: 'Arima Madurai', 'Regular';
+  font-family: "Arima Madurai", "Regular";
   font-weight: 900;
 }
 
@@ -75,6 +75,10 @@ h1 {
 
 h3 {
   font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
 }
 
 .header {
