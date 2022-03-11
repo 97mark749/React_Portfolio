@@ -106,4 +106,15 @@ h4 {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+.btn {
+  background: linear-gradient(45deg, #3da5c7 20%, #9639d1 80%);
+  color: #ddedfd;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.15rem;
+  text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
 /*# sourceMappingURL=app.css.map */

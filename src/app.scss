@@ -104,3 +104,12 @@ h4{
   border: 0.5px solid $purple;
   box-shadow: 0 1px 1px rgba(0,0,0,0.5);
 }
+.btn{
+  background: $gradient-bg;
+  color: $white;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.15rem;
+  text-shadow: 0 0.5px 1px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+}
