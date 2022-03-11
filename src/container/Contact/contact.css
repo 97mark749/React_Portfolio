@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
+/* ========= Variables ========= */
+.contact__container {
+  height: 50rem;
+  position: relative;
+}
+
+.contact__container form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #2f3134;
+}
+/*# sourceMappingURL=contact.css.map */

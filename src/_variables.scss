@@ -4,12 +4,15 @@
 
 $white: rgb(221,237,253);
 $black: rgb(25,26,28);
+$dk-gray: rgb(35,37,39);
+$gray: rgb(47,49,52);
 $blue: rgb(61,165,199);
 $lighter_blue: rgb(65, 177, 214);
 $purple: rgb(150,57,209);//rgb(151,79,195);
 $image-box-shadow: 15px 15px 10px rgba(0,0,0,0.25);
 $primary-font: 'Arima Madurai';
 $secondary-font: 'Fira Sans';
+$gradient-bg: linear-gradient(45deg, $blue 20%, $purple 80%);
 
 @mixin flex__center{
     display: flex;

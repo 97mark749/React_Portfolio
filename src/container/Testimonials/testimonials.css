@@ -1,1 +1,118 @@
-/* No CSS *//*# sourceMappingURL=testimonials.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
+/* ========= Variables ========= */
+.testimonial__container {
+  height: 70rem;
+  padding: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__container .subsection__heading {
+  width: 85%;
+  margin-bottom: 3rem;
+}
+
+.testimonial__container .subsection__heading .divider__line {
+  border-color: #3da5c7;
+  background: #3da5c7;
+}
+
+.testimonial__container .testimonials__container {
+  height: 95%;
+  width: 85%;
+}
+
+.testimonial__container .testimonials__container .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  height: 13rem;
+  margin-bottom: 5rem;
+}
+
+.testimonial__container .testimonials__container .testimonial .company__image {
+  height: 100%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__container .testimonials__container .testimonial .company__image img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  -webkit-box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial__container .testimonials__container .testimonial .text {
+  width: 80%;
+}
+
+.testimonial__container .testimonials__container .testimonial .text p {
+  position: relative;
+  width: 50%;
+  line-height: 1.75rem;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
+}
+
+.testimonial__container .testimonials__container .testimonial .text p .quote__icon {
+  color: #3da5c7;
+}
+
+.testimonial__container .testimonials__container .testimonial .text p .quote__icon.left {
+  position: absolute;
+  left: -1.5rem;
+}
+
+.testimonial__container .testimonials__container .testimonial .text p .quote__icon.right {
+  position: relative;
+  right: -0.5rem;
+}
+
+.testimonial__container .testimonials__container .testimonial .text .company__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial__container .testimonials__container .testimonial .text .company__info .persons__name {
+  color: #3da5c7;
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial__container .testimonials__container .testimonial .text .company__info .company__name {
+  letter-spacing: 0.15rem;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+/*# sourceMappingURL=testimonials.css.map */

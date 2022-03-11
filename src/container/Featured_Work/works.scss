@@ -1,0 +1,124 @@
+@import '../../variables';
+
+.works__container{
+    height: 130rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 6rem;
+    padding: 2rem 4rem;
+    
+    .top__section{
+        height: 45rem;
+        @include flex__center;
+        .works__nav__desc{
+            margin: 0 4rem;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-flow: row nowrap;
+            .image{
+                width:50%;
+                transform: scale(0.9);
+                position: relative;
+                left: -4rem;
+            }
+            .content{
+                width: 50%;
+                h2{
+                    margin-bottom: 1rem;
+                }
+                .bottom__content{
+                    margin-top: 1.5rem;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    height: 16rem;
+                    p{
+                        width: 50%;
+                        line-height: 1.5rem;
+                        letter-spacing: 0.2rem;
+                        font-weight: 300;
+                    }
+                    .buttons__container{
+                        padding-right: 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        flex-flow: column nowrap;
+                        height: 100%;
+                        width:50%;
+                        input{
+                            margin: 1rem 0;
+                            //background-color: black;
+                            background: $gradient-bg;
+                            border-radius: 25px;
+                           // border: 1px solid $black;
+                            color: $white;
+                            width: 11.5rem;
+                            height: 3.25rem;
+                            filter: drop-shadow(5px 5px 10px rgba(150,57,209, 0.25));
+                            box-shadow: 1px 3px 1px rgba(0,0,0,0.5);
+                            font-style: italic;
+                            font-weight: 400;
+                            letter-spacing: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom__section{
+        height: 85rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        .subsection__heading{
+            width: 85%;
+            margin-bottom: 5rem;
+        }
+        
+        .featured__Work__container{
+            width: 85%;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+            .works__card{
+                height: 26rem;
+                width: 20rem;
+                border-radius: 5%;
+                border: 1px solid $purple;
+                background: linear-gradient(344deg,rgba(65, 177, 214,0.25)20%,rgba(151,79,195, 0.5) 110%);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                box-shadow: 1.5px 1.5px 1px rgba(0,0,0,0.5), inset 1.25px 1.25px 1px rgba(0,0,0,0.5);
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%); 
+            }
+            .works__card__container{
+                width: 20rem;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 2.5rem;
+                .works__name{
+                    letter-spacing: 0.2rem;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+                p{
+                    width: 16rem;
+                    line-height: 1.5rem;
+                    letter-spacing: 0.1rem;
+                    margin-top: 0.75rem;
+                    font-size: 1rem;
+                    font-weight: 200;
+                }
+            }
+        }
+
+    }
+}

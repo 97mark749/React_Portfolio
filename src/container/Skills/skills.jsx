@@ -9,7 +9,7 @@ const Skills = () => {
   // Below will populate the dat from the Sanity Server 
   const [skills, setSkills] = useState([]) // useStateSnippet
   useEffect(() => { // useEffectSnippet
-    const query = `*[_type == "skills"]{title}`;
+    const query = `*[_type == "skills"]`;
 
     client.fetch(query)
       .then((data) => setSkills(data))
@@ -32,16 +32,12 @@ const Skills = () => {
       </div>
       <div className="right">
         <div className="carousel__container">
-          {/* 
-            const skills = [
-              {title: 'HTML'},
-            ];
-          */}
-          {skills.map((skill,index) => (
+          {skills.map((item,index) => (
               <div key={`item-${index}`} className="skill">
                 <div className='circle'>
                   <div className="icon__circle"></div>
-                  {skill.title}
+                  <h6 className='skill__name'>{item.skillname}</h6>
+
                 </div>
               </div>
           ))}

@@ -1,0 +1,80 @@
+@import '../../variables';
+
+.testimonial__container{
+    height: 70rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .subsection__heading{
+        width: 85%;
+        margin-bottom: 3rem;
+        .divider__line{
+            border-color: $blue;
+            background: $blue;
+        }
+    }
+    .testimonials__container{
+        height: 95%;
+        width: 85%;
+        .testimonial{
+            display: flex;
+            flex-flow: row nowrap;
+            height: 13rem;
+            margin-bottom: 5rem;
+            .company__image{
+                height: 100%;
+                width: 20%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img{
+                    width: 8rem;
+                    height: 8rem;
+                    border-radius: 50%;
+                    box-shadow: -3px 5px 10px rgba(0,0,0,0.5);
+                }
+            }
+            .text{
+                width:80%;
+                p{
+                    position:relative;
+                    width: 50%;
+                    line-height: 1.75rem;
+                    letter-spacing: 0.05rem;
+                    font-weight: 300;
+                    .quote__icon{
+                        color: $blue;
+                        &.left{
+                            position:absolute;
+                            left: -1.5rem;
+                        }
+                        &.right{
+                            position: relative;
+                            right: -0.5rem;
+                        }
+                    }
+                }
+                .company__info{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+                    .persons__name{
+                        color: $blue;
+                        font-size: 1.25rem;
+                        letter-spacing: 0.15rem;
+                        margin-top: 1.5rem;
+                        margin-bottom: 0.25rem;
+                    }
+                    .company__name{
+                        letter-spacing: 0.15rem;
+                        font-weight: 200;
+                        font-style: italic;
+                        font-size: 0.95rem;
+                    }
+
+                }
+            }
+        }
+    }
+}

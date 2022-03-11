@@ -4,7 +4,7 @@
     position: relative;
     width: 7rem;
     height: 7rem;
-    background: linear-gradient(45deg, $blue 20%, $purple 80%);
+    background: $gradient-bg;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 50%;
@@ -12,9 +12,9 @@
     //justify-content: space-around;
     //align-items: center;
     //flex-flow: column nowrap;
-    box-shadow: 3px 3px 1px black,$image-box-shadow;
+    box-shadow: 0 7px 10px -10px rgba(0,0,0,0.75);
     padding: 2rem;
-    border: 1px solid $black;
+    
     @include transition-properties(width,height, border-radius, transform, top,left);
     @include transition-duration(400ms);
     @include transition-timing(ease-in-out);
@@ -43,7 +43,7 @@
             left: 0%;
             transform: translate(55%,135%);
             &.workStyle__header{
-                transform: translate(65%,135%);
+                transform: translate(70%,135%);
             }
             &.design__header{
                 transform: translate(55%,125%);
@@ -59,7 +59,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        filter: drop-shadow(2px 3px 1px rgba(0,0,0,0.5));
+        filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
         transform: translate(-50%,-50%);
         @include transition-properties(transform, top,left,width,height);
         @include transition-duration(400ms);

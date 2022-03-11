@@ -54,7 +54,7 @@ input, select {
 
 /******** GLOBAL STYLES ********/
 .app {
-  background-color: #292c33;
+  background-color: #191a1c;
   font-family: "Fira Sans", "regular";
   font-size: 16px;
   color: #ddedfd;
@@ -86,5 +86,24 @@ h4 {
   font-size: 3.25rem;
   letter-spacing: 0.3rem;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.sub__header {
+  color: #ddedfd;
+  font-size: 1.75rem;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  font-family: "Arima Madurai";
+  margin-bottom: 0.75rem;
+}
+
+.divider__line {
+  width: 100%;
+  height: 1px;
+  background: #9639d1;
+  border: 0.5px solid #9639d1;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=app.css.map */

@@ -5,3 +5,4 @@ export {default as Design} from './Card/design_card';
 export {default as Experience} from './Card/experience_card';
 export {default as WorkStyle} from './Card/work_style_card';
 export {default as Phone} from './ThreeDPhone/phone';
+export {default as Devices} from './Device_Img/device_img';

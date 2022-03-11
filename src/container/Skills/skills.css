@@ -46,6 +46,7 @@
   font-weight: 500;
   color: #9639d1;
   letter-spacing: 0.2rem;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .skills__container .left .skills__content .scroll__line .line {
@@ -54,6 +55,8 @@
   width: 8rem;
   background: #9639d1;
   border: 1px solid #9639d1;
+  -webkit-box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .skills__container .left .skills__content .header {
@@ -85,10 +88,12 @@
 }
 
 .skills__container .right .carousel__container {
+  position: relative;
+  top: 0.5rem;
   width: 40rem;
   overflow: hidden;
   overflow-x: auto;
-  height: 12rem;
+  height: 14rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,12 +110,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 2rem;
   width: 9rem;
-  height: 11rem;
+  height: 14rem;
+  position: relative;
+  bottom: -1rem;
 }
 
 .skills__container .right .carousel__container .skill .circle {
@@ -120,6 +130,25 @@
   border-radius: 50%;
   background: black;
   border: 1px solid #3da5c7;
+  -webkit-box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.75);
+  -webkit-filter: drop-shadow(0px 5px 10px rgba(61, 165, 199, 0.25));
+          filter: drop-shadow(0px 5px 10px rgba(61, 165, 199, 0.25));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__container .right .carousel__container .skill .circle .skill__name {
+  color: #3da5c7;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .skills__container .right .carousel__container .skill .circle .icon__circle {
@@ -132,5 +161,7 @@
   width: 4.5rem;
   border-radius: 50%;
   background: #3da5c7;
+  -webkit-box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.75);
 }
 /*# sourceMappingURL=skills.css.map */

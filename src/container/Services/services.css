@@ -56,13 +56,24 @@
   margin: 1.25rem 0;
 }
 
-.services__container .left .services__content__container .services__list .list__item .check_mark {
-  color: #41b1d6;
-  background-color: #ddedfd;
-  border-radius: 50%;
-  font-size: 1.1rem;
+.services__container .left .services__content__container .services__list .list__item .check__mark__circle {
   -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #3da5c7 20%, #9639d1 80%);
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: relative;
+}
+
+.services__container .left .services__content__container .services__list .list__item .check__mark__circle .check {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ddedfd;
+  font-size: 1.25rem;
 }
 
 .services__container .left .services__content__container .services__list .list__item li {

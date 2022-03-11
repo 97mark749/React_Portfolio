@@ -23,12 +23,21 @@
                     flex-flow: row nowrap;
                     align-items: center;
                     margin: 1.25rem 0;
-                    .check_mark{
-                        color: $lighter_blue;
-                        background-color: $white;
-                        border-radius: 50%;
-                        font-size: 1.1rem;
+                    .check__mark__circle{
                         box-shadow: 0 2px 1px rgba(0,0,0,0.5);
+                        background: $gradient-bg;
+                        border-radius: 50%;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        position:relative;
+                        .check{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform:translate(-50%,-50%);
+                            color: $white;
+                            font-size: 1.25rem;
+                        }
                     }
                     li{
                         color: $blue;
