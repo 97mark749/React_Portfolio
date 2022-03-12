@@ -27,8 +27,8 @@ useEffect(() => {
             <div className="bottom__content">
               <p>Feel free to explore some of my latest work and side projects. Source code is available for my templates and images that you see on this website. Github links are also provided.</p>
               <div className="buttons__container">
-                <input type="button" value="MY WORK" />
-                <input type="button" value="TESTIMONIALS" />
+                <input type="button" value="MY WORK" className='btn'/>
+                <input type="button" value="TESTIMONIALS" className='btn'/>
               </div>
             </div>
           </div>

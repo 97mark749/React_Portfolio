@@ -1,0 +1,70 @@
+@import '../../variables';
+
+.footer__container{
+    font-family: $primary-font;
+    position: relative;
+    height: 30rem;
+    background: linear-gradient(300deg,$blue 20%,$purple 80%);
+    padding: 4rem 4rem 3rem 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    .left{
+        p{
+            line-height: 1.5rem;
+            letter-spacing: 0.1rem;
+            margin-top: 6rem;
+            opacity: 0.75;
+            font-size: 1rem;
+            font-style: italic;
+        }
+    }
+    .right{
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:  space-between;
+        .footer__contact__container{
+            .get__in__touch{
+                position:relative;
+                top: 0.25rem;
+                font-size: 1.25rem;
+                font-weight: 400;
+                letter-spacing: 0.15rem;
+                margin-bottom: 5rem;
+            }
+            .email{
+                opacity: 0.75;
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+            }
+            .phone__number{
+                opacity: 0.75;
+                font-size: 1rem;
+            }
+        }
+        .social__media__icons{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            gap: 2rem;
+            .icon{
+                position:relative;
+                background: $gray;
+                height: 2.75rem;
+                width: 2.75rem;
+                border-radius: 50%;
+                box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+
+                .logo{
+                    font-size: 1.5rem;
+                    color:$white;
+                    position:absolute;
+                    left: 50%;
+                    top:50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+    }
+}

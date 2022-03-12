@@ -1,1 +1,96 @@
-/* No CSS *//*# sourceMappingURL=footer.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
+/* ========= Variables ========= */
+.footer__container {
+  font-family: "Arima Madurai";
+  position: relative;
+  height: 30rem;
+  background: linear-gradient(300deg, #3da5c7 20%, #9639d1 80%);
+  padding: 4rem 4rem 3rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__container .left p {
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 6rem;
+  opacity: 0.75;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.footer__container .right {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__container .right .footer__contact__container .get__in__touch {
+  position: relative;
+  top: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  margin-bottom: 5rem;
+}
+
+.footer__container .right .footer__contact__container .email {
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.footer__container .right .footer__contact__container .phone__number {
+  opacity: 0.75;
+  font-size: 1rem;
+}
+
+.footer__container .right .social__media__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2rem;
+}
+
+.footer__container .right .social__media__icons .icon {
+  position: relative;
+  background: #2f3134;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.footer__container .right .social__media__icons .icon .logo {
+  font-size: 1.5rem;
+  color: #ddedfd;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=footer.css.map */

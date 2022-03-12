@@ -8,8 +8,8 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 50%;
-  -webkit-box-shadow: 0 7px 10px -10px rgba(0, 0, 0, 0.75);
-          box-shadow: 0 7px 10px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 7px 10px -10px rgba(0, 0, 0, 0.75), 0 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 7px 10px -10px rgba(0, 0, 0, 0.75), 0 2px 3px rgba(0, 0, 0, 0.5);
   padding: 2rem;
   -webkit-transition-property: width , height , border-radius , top , left , -webkit-transform;
   transition-property: width , height , border-radius , top , left , -webkit-transform;
