@@ -13,6 +13,7 @@ $image-box-shadow: 15px 15px 10px rgba(0,0,0,0.25);
 $primary-font: 'Arima Madurai';
 $secondary-font: 'Fira Sans';
 $gradient-bg: linear-gradient(45deg, $blue 20%, $purple 80%);
+$gradient-bg-reversed: linear-gradient(90deg, $blue 20%, $purple 80%);
 
 @mixin flex__center{
     display: flex;
