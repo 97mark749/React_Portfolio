@@ -12,6 +12,16 @@ h3 {
   text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.25);
 }
 
+h3:hover::before {
+  -webkit-transform: translate3d(200%, 0px, 0px);
+          transform: translate3d(200%, 0px, 0px);
+}
+
+h3:hover::after {
+  -webkit-transform: translate3d(-200%, 0px, 0px);
+          transform: translate3d(-200%, 0px, 0px);
+}
+
 h3 span {
   color: rgba(221, 237, 253, 0.7);
 }
@@ -26,6 +36,14 @@ h3::before {
   background-color: #ddedfd;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: ubic-bezier(0.9, 0.34, 0.29, 1.08);
+          transition-timing-function: ubic-bezier(0.9, 0.34, 0.29, 1.08);
 }
 
 h3::after {
@@ -38,5 +56,13 @@ h3::after {
   background-color: #ddedfd;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: ubic-bezier(0.9, 0.34, 0.29, 1.08);
+          transition-timing-function: ubic-bezier(0.9, 0.34, 0.29, 1.08);
 }
 /*# sourceMappingURL=header.css.map */

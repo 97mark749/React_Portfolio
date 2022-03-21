@@ -8,6 +8,14 @@ h3{
     font-weight: 400;
     letter-spacing: 0.5rem;
     text-shadow: 0 0.5px 1px rgba(0,0,0,0.25);
+    &:hover{
+        &::before{
+            transform: translate3d(200%,0px,0px);
+        }
+        &::after{
+            transform: translate3d(-200%,0px,0px);
+        }
+    }
     span{
         color: rgba(221,237,253,0.7);
     }
@@ -20,6 +28,9 @@ h3{
         width: 33%;
         background-color:$white;
         box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+        @include transition-properties(transform);
+        @include transition-duration(500ms);
+        @include transition-timing(ubic-bezier(0.9,0.34,0.29,1.08));
     }
     &::after{
         content: '';
@@ -30,5 +41,8 @@ h3{
         width: 33%;
         background-color:$white;
         box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+        @include transition-properties(transform);
+        @include transition-duration(500ms);
+        @include transition-timing(ubic-bezier(0.9,0.34,0.29,1.08));
     }
 }

@@ -26,24 +26,61 @@
         top: 15rem;
         
         div{
-            @include flex__center;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
             gap: 0.35rem;
-            flex-flow: row wrap;
             width: 2rem;
+            height: 2rem;
+            @include transition-properties(width,height);
+            @include transition-duration(500ms);
+            @include transition-timing(ease);
+            &:hover{
+                width: 7rem;
+                height: 7rem;
+                span{
+                    width: 3rem;
+                    height:3rem;
+                    font-size: 2rem;
+                    .popout__icon{
+                        opacity: 1;
+                    }
+                }
+                + p{
+                    opacity: 0;
+                    width: 7rem;
+                }
+            }
             span{
                 font-size: 0;
                 width: 0.75rem;
                 height: 0.75rem;
                 background-color: $white;
+                @include flex__center;
+                @include transition-properties(width,height, font-size);
+                @include transition-duration(500ms);
+                @include transition-timing(ease);
+                .popout__icon{
+                    color: $purple;
+                    opacity: 0;
+                    @include transition-properties(opacity);
+                    @include transition-duration(500ms);
+                    @include transition-timing(ease);
+                }
             }
         }
         p{
+            opacity: 1;
+            width: 2rem;
             margin-top: 1rem;
             font-size: 1.25rem;
             color: rgba(221,237,253,0.7);
             font-weight: 300;
             line-height: 1.4rem;
             letter-spacing: 0.2rem;
+            @include transition-properties(width,opacity);
+            @include transition-duration(250ms);
+            @include transition-timing(ease);
         }
     }
     .year__est{
@@ -103,20 +140,36 @@
             }
         }
     }
+    .line{
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: $white;
+        transform-style: preserve-3d;
+        will-change: transform;
+        transform:translate3d(0px,-100%,0px);
+        &.one{animation: slideDown 1750ms 0ms normal infinite cubic-bezier(0.9,0.34,0.29,1.08);}
+        &.two{animation: slideDown 2000ms 1750ms normal infinite cubic-bezier(0.9,0.34,0.29,1.08);}
+        &.three{animation: slideDown 1800ms 0ms normal infinite cubic-bezier(0.9,0.34,0.29,1.08);}
+
+        
+    }
     .home__topLeft__line{
+        overflow: hidden;
         position:relative;
         top: 7rem;
         width: 2px;
         height: 30%;
-        background-color: $white;
+        //background-color: $white;
         margin: 0;
     }
     .home__bottomLeft__line{
+        overflow: hidden;
         position:relative;
         top: 17rem;
         width: 2px;
         height: 30%;
-        background-color: $white;
+        //background-color: $white;
         margin: 0;
     }
     .scroll__txt{
@@ -131,12 +184,13 @@
         margin: 0;
     }
     .home__right__line{
+        overflow: hidden;
         position:absolute;
         top: 40rem;
         right:3.5rem;
         width: 2px;
         height: 137%;
-        background-color: $white;
+        //background-color: $white;
         margin: 0;
     }
     

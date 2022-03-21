@@ -31,6 +31,48 @@
 }
 
 .container .home__work__popout div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 0.35rem;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transition-property: width , height;
+  transition-property: width , height;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.container .home__work__popout div:hover {
+  width: 7rem;
+  height: 7rem;
+}
+
+.container .home__work__popout div:hover span {
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+}
+
+.container .home__work__popout div:hover span .popout__icon {
+  opacity: 1;
+}
+
+.container .home__work__popout div:hover + p {
+  opacity: 0;
+  width: 7rem;
+}
+
+.container .home__work__popout div span {
+  font-size: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #ddedfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,28 +82,40 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.35rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 2rem;
+  -webkit-transition-property: width , height , font-size;
+  transition-property: width , height , font-size;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
-.container .home__work__popout div span {
-  font-size: 0;
-  width: 0.75rem;
-  height: 0.75rem;
-  background-color: #ddedfd;
+.container .home__work__popout div span .popout__icon {
+  color: #9639d1;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .container .home__work__popout p {
+  opacity: 1;
+  width: 2rem;
   margin-top: 1rem;
   font-size: 1.25rem;
   color: rgba(221, 237, 253, 0.7);
   font-weight: 300;
   line-height: 1.4rem;
   letter-spacing: 0.2rem;
+  -webkit-transition-property: width , opacity;
+  transition-property: width , opacity;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .container .year__est {
@@ -140,21 +194,48 @@
           filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 
+.container .line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #ddedfd;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  will-change: transform;
+  -webkit-transform: translate3d(0px, -100%, 0px);
+          transform: translate3d(0px, -100%, 0px);
+}
+
+.container .line.one {
+  -webkit-animation: slideDown 1750ms 0ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
+          animation: slideDown 1750ms 0ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
+}
+
+.container .line.two {
+  -webkit-animation: slideDown 2000ms 1750ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
+          animation: slideDown 2000ms 1750ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
+}
+
+.container .line.three {
+  -webkit-animation: slideDown 1800ms 0ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
+          animation: slideDown 1800ms 0ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
+}
+
 .container .home__topLeft__line {
+  overflow: hidden;
   position: relative;
   top: 7rem;
   width: 2px;
   height: 30%;
-  background-color: #ddedfd;
   margin: 0;
 }
 
 .container .home__bottomLeft__line {
+  overflow: hidden;
   position: relative;
   top: 17rem;
   width: 2px;
   height: 30%;
-  background-color: #ddedfd;
   margin: 0;
 }
 
@@ -172,12 +253,12 @@
 }
 
 .container .home__right__line {
+  overflow: hidden;
   position: absolute;
   top: 40rem;
   right: 3.5rem;
   width: 2px;
   height: 137%;
-  background-color: #ddedfd;
   margin: 0;
 }
 /*# sourceMappingURL=home.css.map */

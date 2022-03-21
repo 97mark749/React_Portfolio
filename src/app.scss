@@ -124,3 +124,13 @@ h4{
 .ripples{
   overflow:visible;
 }
+
+@keyframes slideDown{
+  from{
+    transform: translate3d(0px, -100%, 0px);
+  }
+  
+  to{
+    transform: translate3d(0px, 100%, 0px);
+  }
+}

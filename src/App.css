@@ -135,4 +135,26 @@ h4 {
 .ripples {
   overflow: visible;
 }
+
+@-webkit-keyframes slideDown {
+  from {
+    -webkit-transform: translate3d(0px, -100%, 0px);
+            transform: translate3d(0px, -100%, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(0px, 100%, 0px);
+            transform: translate3d(0px, 100%, 0px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    -webkit-transform: translate3d(0px, -100%, 0px);
+            transform: translate3d(0px, -100%, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(0px, 100%, 0px);
+            transform: translate3d(0px, 100%, 0px);
+  }
+}
 /*# sourceMappingURL=app.css.map */
