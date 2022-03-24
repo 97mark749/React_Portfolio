@@ -26,9 +26,9 @@ const home = () => {
       <div className="image__ctr">
         <img src={images.blur_keyboard} alt="blurred keyboard"/>
         <h2 className="byb__title">Build<br/>Your<br/>Brand</h2>
-        <div className="core__mission__ctr">
+        <div className="core__mission__ctr" id="core_mission_container">
           <p className="byb__txt">MY CORE<br/>MISSION</p>
-          <IoIosArrowDropdownCircle className='byb__icon'/>
+          <div id="bybIcon"><IoIosArrowDropdownCircle className='byb__icon'/></div>
         </div>
         </div>
       <div className='home__bottomLeft__line'><div className="line two"></div></div>

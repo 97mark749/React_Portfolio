@@ -19,7 +19,7 @@ const Testimonials = () => {
   return (
     <div className="testimonial__container">
       <div className="subsection__heading">
-          <h4 className = "sub__header">TESTIMONIALS</h4>
+          <h4 className = "sub__header" id="testimonials__header">TESTIMONIALS</h4>
           <div className="divider__line"></div>
       </div>
       <div className="testimonials__container">

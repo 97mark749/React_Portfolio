@@ -98,7 +98,17 @@
   width: 50%;
 }
 
-.works__container .top__section .works__nav__desc .content .bottom__content .buttons__container input {
+.works__container .top__section .works__nav__desc .content .bottom__content .buttons__container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
   margin: 1rem 0;
   border-radius: 25px;
   color: #ddedfd;

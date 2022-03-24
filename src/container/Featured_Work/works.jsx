@@ -27,8 +27,8 @@ useEffect(() => {
             <div className="bottom__content">
               <p>Feel free to explore some of my latest work and side projects. Source code is available for my templates and images that you see on this website. Github links are also provided.</p>
               <div className="buttons__container">
-                <input type="button" value="MY WORK" className='btn'/>
-                <input type="button" value="TESTIMONIALS" className='btn'/>
+                <a type="button" className='btn' href="#featured__work__header">MY WORK</a>
+                <a type="button" className='btn' href="#testimonials__header">TESTIMONIALS</a>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ useEffect(() => {
       </div>
       <div className="bottom__section">
         <div className="subsection__heading">
-          <h4 className = "sub__header">FEATURED WORK</h4>
+          <h4 className = "sub__header" id="featured__work__header">FEATURED WORK</h4>
           <div className="divider__line"></div>
         </div>
         <div className="featured__Work__container">

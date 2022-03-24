@@ -10,6 +10,7 @@
         position: relative;
         left: calc(25vw - 4rem);
         top: 14rem;
+        width: 30rem;
     }
     .home__description{
         position: absolute;
@@ -53,8 +54,8 @@
             }
             span{
                 font-size: 0;
-                width: 0.75rem;
-                height: 0.75rem;
+                width: 1rem;
+                height: 1rem;
                 background-color: $white;
                 @include flex__center;
                 @include transition-properties(width,height, font-size);
@@ -129,14 +130,34 @@
             right: -4rem;
             flex-flow: row nowrap;
             box-shadow: $image-box-shadow;
+            @include transition-properties(height);
+            @include transition-duration(500ms);
+            @include transition-timing(ease);
+
+            &:hover{
+                height: 15.25rem;
+                .byb__txt{
+                    transform:translate3d(0px,-110%,0px);                    
+                }
+                .byb__icon{
+                    opacity: 0;
+                }
+            }
             .byb__txt{
                 font-weight: 300;
                 font-size: 1.2rem;
                 line-height: 2rem;
+                @include transition-properties(transform);
+                @include transition-duration(400ms);
+                @include transition-timing(ease);
             }
             .byb__icon{
                 font-size: 1.75rem;
+                opacity: 1;
                 filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.5));
+                @include transition-properties(opacity);
+                @include transition-duration(200ms);
+                @include transition-timing(ease);
             }
         }
     }

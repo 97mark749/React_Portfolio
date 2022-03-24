@@ -49,14 +49,77 @@
 }
 
 .app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__link {
+  overflow: hidden;
+  position: relative;
   color: #ddedfd;
   text-decoration: none;
   font-weight: 300;
   letter-spacing: 0.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__link:hover::before {
+  -webkit-transform: translate3d(100%, 0px, 0px);
+          transform: translate3d(100%, 0px, 0px);
+}
+
+.app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__link:hover::after {
+  -webkit-transform: translate3d(-100%, 0px, 0px);
+          transform: translate3d(-100%, 0px, 0px);
+}
+
+.app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__link:hover + .app__navbar__icon {
+  color: #3da5c7;
+}
+
+.app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__link::before {
+  content: '';
+  position: absolute;
+  bottom: 0.25rem;
+  left: -55%;
+  height: 0.5px;
+  width: 50%;
+  background: #3da5c7;
+  border: 1px solid #3da5c7;
+  border-radius: 10%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0.25rem;
+  right: -25%;
+  height: 0.5px;
+  width: 20%;
+  background: #3da5c7;
+  border: 1px solid #3da5c7;
+  border-radius: 10%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .app__navbar__container .app__navbar .app__navbar__list .app__navbar__item .app__navbar__icon {
   margin-left: 2rem;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 350ms;
+          transition-duration: 350ms;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .app__navbar__container .app__navbar .contact__box {
