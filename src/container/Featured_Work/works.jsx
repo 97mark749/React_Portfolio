@@ -17,7 +17,7 @@ useEffect(() => {
 
 
   return (
-    <div className="works__container">
+    <div className="works__container" id="Featured Work">
       <div className="top__section">
         <div className="works__nav__desc">
           <div className="image"><Devices/></div>

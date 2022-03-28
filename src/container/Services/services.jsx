@@ -7,7 +7,7 @@ import {BsCheck} from 'react-icons/bs';
 const services = () => {
   const services = ['SEO Optimization','Expectional UX/UI Design','Client Tailored Website Design','Interactive User Interfaces','A Simple Yet Modern Approach','Mobile First Responsiveness','User Engagement'];
   return (
-    <div className="services__container">
+    <div className="services__container" id="Services">
         <div className="left">
           <div className="services__content__container">
             <h2 className='header'>Services &<br/>Expectations</h2>

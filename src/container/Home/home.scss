@@ -64,7 +64,9 @@
                 .popout__icon{
                     color: $purple;
                     opacity: 0;
-                    @include transition-properties(opacity);
+
+                    animation: rotate 2500ms infinite ease;
+                    @include transition-properties(opacity, transform);
                     @include transition-duration(500ms);
                     @include transition-timing(ease);
                 }
@@ -134,7 +136,7 @@
             @include transition-duration(500ms);
             @include transition-timing(ease);
 
-            &:hover{
+            &:hover, &:focus{
                 height: 15.25rem;
                 .byb__txt{
                     transform:translate3d(0px,-110%,0px);                    

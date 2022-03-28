@@ -13,7 +13,7 @@ const home = () => {
 
 
   return (
-    <div className="container">
+    <div className="container" id="Home">
       <Header/>
       <h1>Make Your<br/>Ideas Come<br/>To Life</h1>
       <p className='home__description'>I’m an Independent Front-End Developer with<br/>an eye for creativity and professionalism</p>

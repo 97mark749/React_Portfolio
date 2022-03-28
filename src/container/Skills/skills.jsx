@@ -19,7 +19,7 @@ const Skills = () => {
   
 
   return (
-    <div className="skills__container">
+    <div className="skills__container" id="My Toolbox">
       <div className="left">
         <div className="skills__content">
           <div className="scroll__line">
