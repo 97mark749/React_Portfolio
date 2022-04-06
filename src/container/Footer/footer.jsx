@@ -20,10 +20,10 @@ const footer = () => {
           <div className="phone__number">(856)360-6710</div>
         </div>
         <div className="social__media__icons">
-          <div className="icon"><TiSocialLinkedin className='logo'/></div>
-          <div className="icon"><BsGithub className='logo'/></div>
-          <div className="icon"><TiSocialYoutube className='logo'/></div>
-          <div className="icon"><AiFillInstagram className='logo'/></div>
+          <div className="icon" id="ln"><TiSocialLinkedin className='logo'/></div>
+          <div className="icon" id="gh"><BsGithub className='logo'/></div>
+          <div className="icon" id="yt"><TiSocialYoutube className='logo'/></div>
+          <div className="icon" id="ig"><AiFillInstagram className='logo'/></div>
         </div>
       </div>
     </div>

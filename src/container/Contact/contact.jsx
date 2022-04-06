@@ -1,5 +1,6 @@
 import React, {useRef} from 'react';
 import './contact.scss';
+import axios from 'axios';
 
 
 
@@ -11,24 +12,45 @@ const Contact = () => {
     const eml = useRef(null)
     const pNumber = useRef(null)
     const cmts = useRef(null)
-/*
-    const handleSubmit = () => {
 
-      const data = {
+    function handleSubmit(event){
+      event.preventDefault();
+      const message = {
         firstName: fName.current.value,
         lastName: lName.current.value,
         email: eml.current.value,
-        phoneNumbe: pNumber.current.value,
+        phoneNumber: pNumber.current.value,
         comments: cmts.current.value
       }
-      alert("tadaaa!: \n" + JSON.stringify(data) + "Your data");
-      return false;
+      axios({
+  
+        // Endpoint to send files
+        url: "http://localhost:3000/frontend_react/src/container/Contact/pass_form.php",
+        method: "POST",
+    
+        // Attaching the form data
+        data: message,
+      })
+    
+        // Handle the response from backend here
+        .then((res) => { 
+          console.log(res);
+        })
+    
+        // Catch errors if any
+        .catch((err) => { });
+        
+        
+        resetForm();
+    }
+    function resetForm(){
+      document.getElementById('contact_form').reset();
     }
 
-  */
+  
   return (
    <div className="contact__container">
-      <form id="contact_form" className="contact__form__container">
+      <form id="contact_form" className="contact__form__container" onSubmit={handleSubmit}>
         <div className="contact__banner">
           <h4 className="sub__header">Send Me A Message</h4>
           <p>Have A Question Or Proposal, Don’t Hesitate To Contact Me.</p>
@@ -55,7 +77,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="form__buttons">
-            <input type="button" value="RESET" className='btn'/>
+            <input type="button" value="RESET" className='btn' onClick={resetForm}/>
             <input type="submit" value="SUBMIT" className='btn' tabIndex="5"/>
           </div>
         </div>
