@@ -109,12 +109,13 @@
 }
 
 .footer__container .right .social__media__icons .icon:hover#gh::before, .footer__container .right .social__media__icons .icon:hover#yt::before, .footer__container .right .social__media__icons .icon:hover#ln::before, .footer__container .right .social__media__icons .icon:hover#ig::before {
+  font-size: 1rem;
   opacity: 1;
 }
 
 .footer__container .right .social__media__icons .icon#gh::before, .footer__container .right .social__media__icons .icon#yt::before, .footer__container .right .social__media__icons .icon#ln::before, .footer__container .right .social__media__icons .icon#ig::before {
   opacity: 0;
-  font-size: 1rem;
+  font-size: 0rem;
   color: #ddedfd;
   position: absolute;
   left: 60%;
@@ -122,8 +123,12 @@
   color: white;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: opacity 300ms ease;
-  transition: opacity 300ms ease;
+  -webkit-transition-property: opacity , font-size;
+  transition-property: opacity , font-size;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .footer__container .right .social__media__icons .icon#gh::before {

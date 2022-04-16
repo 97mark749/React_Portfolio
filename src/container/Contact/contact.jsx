@@ -25,7 +25,7 @@ const Contact = () => {
       axios({
   
         // Endpoint to send files
-        url: "http://localhost:3000/frontend_react/src/container/Contact/pass_form.php",
+        url: "",
         method: "POST",
     
         // Attaching the form data

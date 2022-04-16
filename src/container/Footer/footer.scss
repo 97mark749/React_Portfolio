@@ -71,21 +71,23 @@
                         left: 20%
                     }
                     &#gh::before,&#yt::before,&#ln::before, &#ig::before{
-                        //display:revert;
+                        font-size: 1rem;
                         opacity: 1;
                     }
                 }
                 &#gh::before,&#yt::before,&#ln::before, &#ig::before{
                     //display:none;
                     opacity:0;
-                    font-size: 1rem;
+                    font-size: 0rem;
                     color:$white;
                     position:absolute;
                     left: 60%;
                     top:55%;
                     color: white;
                     transform: translate(-50%,-50%);
-                    transition: opacity 300ms ease;
+                    @include transition-properties(opacity,font-size);
+                    @include transition-duration(300ms);
+                    @include transition-timing(ease-in-out)
                 } 
                 &#gh::before{content:"GitHub";}
                 &#yt::before{content:"YouTube";}

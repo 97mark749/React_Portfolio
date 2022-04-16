@@ -1,11 +1,44 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import {urlFor, client} from '../../client';
 import './ex_projects.scss';
 
 
-const ex_projects = () => {
+const Ex_projects = () => {
+
+  const [projects, setProjects] = useState([])
+  useEffect(() => {
+    const query = `*[_type == "sideprojects"]`;
+    client.fetch(query)
+      .then((data) => setProjects(data))
+      .catch(console.error)
+  }, [])
+
+
   return (
-    <div>ex_projects</div>
+    <div className="other__projects__container" id="other_projects">
+      <div className="content">
+        <div className="subsection__heading">
+            <h4 className = "sub__header" id="featured__work__header">MY OTHER WORKS</h4>
+          <div className="divider__line"></div>
+        </div>
+        <div className="project__card__container">
+        {projects.map((item,index) => (
+            <div key={`item-${index}`}>
+                <div className="project__content__container">
+                  <div className="project__card">
+                  <div className="project__text">
+                    <div className="project__heading">{item.}</div>
+                  </div>
+                </div>
+
+                </div>
+            </div>
+          ))}
+            
+        </div>
+      </div>
+  </div>
   );
 }
 
-export default ex_projects;
+export default Ex_projects;

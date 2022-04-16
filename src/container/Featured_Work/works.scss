@@ -83,17 +83,7 @@
             grid-template-columns: repeat(3, 1fr);
             
             .works__card{
-                height: 26rem;
-                width: 20rem;
-                border-radius: 5%;
-                border: 1px solid $purple;
-                background: linear-gradient(344deg,rgba(65, 177, 214,0.25)20%,rgba(151,79,195, 0.5) 110%);
-                backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                box-shadow: 1.5px 1.5px 1px rgba(0,0,0,0.5), inset 1.25px 1.25px 1px rgba(0,0,0,0.5),0 2px 3px rgba(0,0,0,0.5);
-                position: relative;
-                left: 50%;
-                transform: translateX(-50%); 
+                @include works_card;
             }
             .works__card__container{
                 width: 20rem;

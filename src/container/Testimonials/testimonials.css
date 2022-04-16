@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500;700;800;900&family=Fira+Sans:wght@100;300;400;500;800;900&display=swap");
 /* ========= Variables ========= */
 .testimonial__container {
+  margin-bottom: 8rem;
   height: 70rem;
   padding: 2rem 4rem;
   display: -webkit-box;
