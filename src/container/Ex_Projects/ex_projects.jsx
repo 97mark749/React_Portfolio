@@ -26,8 +26,12 @@ const Ex_projects = () => {
             <div key={`item-${index}`}>
                 <div className="project__content__container">
                   <div className="project__card">
+                    <div className="project__images">{item.images.map((image,idx) =>(
+                      <img src={image} alt="image" key={`img-${idx}`} />
+                    ))}</div>
                   <div className="project__text">
-                    <div className="project__heading">{item.}</div>
+                    <div className="project__heading">{item.title}</div>
+                    <div className="project__desc">{item.description}</div>
                   </div>
                 </div>
 
