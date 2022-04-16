@@ -77,12 +77,33 @@
 }
 
 .services__container .left .services__content__container .services__list .list__item li {
+  position: relative;
   color: #3da5c7;
   font-weight: 500;
   margin-left: 1rem;
   font-size: 1.1rem;
   letter-spacing: 0.2rem;
   text-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.services__container .left .services__content__container .services__list .list__item li:hover::before {
+  width: 100%;
+}
+
+.services__container .left .services__content__container .services__list .list__item li::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  background: rgba(151, 79, 195, 0.5);
+  width: 0px;
+  height: 0.25rem;
+  top: 100%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: width 300ms ease-in-out;
+  transition: width 300ms ease-in-out;
 }
 
 .services__container .right {
