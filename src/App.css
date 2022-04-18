@@ -108,7 +108,9 @@ h4 {
 }
 
 .btn {
+  position: relative;
   background: linear-gradient(45deg, #3da5c7 20%, #9639d1 80%);
+  background-size: 100%;
   color: #ddedfd;
   font-size: 0.8rem;
   font-style: italic;
@@ -117,19 +119,44 @@ h4 {
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   font-weight: 600;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  z-index: 5;
+  -webkit-transition-property: -webkit-transform , -webkit-box-shadow;
+  transition-property: -webkit-transform , -webkit-box-shadow;
+  transition-property: transform , box-shadow;
+  transition-property: transform , box-shadow , -webkit-transform , -webkit-box-shadow;
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
 }
 
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  height: 80%;
+  background: linear-gradient(45deg, #3da5c7 20%, #9639d1 80%);
+  opacity: 0;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  z-index: -1;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
+}
+
 .btn:hover {
-  -webkit-transform: scale(1.05) translateY(-4%);
-          transform: scale(1.05) translateY(-4%);
+  -webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 4px 3px rgba(0, 0, 0, 0.75);
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.btn:hover::before {
+  opacity: 0.9;
 }
 
 .ripples {

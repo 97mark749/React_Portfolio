@@ -77,8 +77,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="form__buttons">
-            <input type="button" value="RESET" className='btn' onClick={resetForm}/>
-            <input type="submit" value="SUBMIT" className='btn' tabIndex="5"/>
+            <button type="button" value="RESET" className='btn' onClick={resetForm}>RESET</button>
+            <button type="submit" value="SUBMIT" className='btn' tabIndex="5">SUBMIT</button>
           </div>
         </div>
         <div className="right">

@@ -62,8 +62,8 @@
   border: 1px solid #9639d1;
   -webkit-box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.5);
           box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.5);
-  -webkit-animation: slideLeft 1500ms 0ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
-          animation: slideLeft 1500ms 0ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
+  -webkit-animation: slideRight 1500ms 0ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
+          animation: slideRight 1500ms 0ms normal infinite cubic-bezier(0.9, 0.34, 0.29, 1.08);
 }
 
 .skills__container .left .skills__content .header {
